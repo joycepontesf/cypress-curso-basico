@@ -1,29 +1,52 @@
-# Testes automatizados com Cypress - Básico
+## Curso Cypress Básico
 
-👋 Seja bem-vindo(a)!
+Projeto criado em atendimento aos exercícios do curso Cypress Básico ministrado por [Walmyr Filho](https://walmyr.dev).
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Neste repositório será encontrado uma suíte de testes automatizados na aplicação "Central de Atendimento ao Cliente TAT" exercitando itens como:
 
-## O que você vai aprender
+- Campos obrigatórios
+- Máscara dos campos
+- Comportamento dos campos tipo 'radio', 'checkbox' e 'select'
+- Funcionamento do campo tipo 'file'
+- Feedback da aplicação para o usuário
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+#### Pré-requisitos
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+Antes de prosseguir certifique-se de ter instalado as seguintes ferramentas:
 
-## Vamos começar?
+- [Node.js](https://nodejs.org/) (versão 20.8.0 ou superior)
+- [npm](https://www.npmjs.com/) (normalmente instalado com o Node.js)
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+#### Passos de Instalação
 
-___
+Abra o terminal da sua preferência e faça o clone deste repositório no seu ambiente local:
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+```bash
+git clone https://github.com/joycepontesf/cypress-curso-basico.git
+```
+
+Ainda no terminal, navegue até a pasta já clonada em sua máquina e execute o comando abaixo para instalar as dependências usadas no projeto:
+
+```bash
+npm install
+```
+
+### Executando Testes
+
+A suíte de testes contida neste projeto pode ser executada no modo Desktop ou Mobile Viewport.
+
+#### Desktop
+
+Em seu terminal, utilize os scripts abaixo para rodar os testes
+
+`npm test` - para executar os testes no modo headless.
+
+`npm run cy:open` - para abrir o Cypress no modo interativo.
+
+#### Mobile
+
+`npm run cy:mobile` - para rodar os testes simulando um dispositivo 410x860
+
+### Dúvidas
+
+Surgiu alguma dúvida sobre este projeto? Estou disponível em [Joyce Pontes](https://www.linkedin.com/in/joycepontes/).
